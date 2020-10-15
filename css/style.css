@@ -7,7 +7,7 @@
 header {
   width: 100%;
   height: 80px;
-  background-color: #f8f8f8;
+  background-color: white;
   border-bottom: 1px solid black;
   position: fixed;
   z-index: 1;
@@ -37,7 +37,8 @@ header {
   margin-right: 20px;
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
-  font-weight: bold;
+  font-weight: normal;
+  text-decoration: none;
   color: grey;
   color: #32495b;
 }
@@ -45,7 +46,7 @@ header {
   margin-right: 5px;
 }
 .fa-chevron-down {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .header-right {
@@ -80,18 +81,97 @@ header {
   cursor: pointer;
 }
 
-
 nav {
+  position: relative;
   width: 100%;
-  height: 80px;
+  height: 160px;
+  top: 80px;
   background-color: white;
 }
+.nav-container {
+  position: relative;
+  width: 70%;
+  height: 80px;
+  bottom: 0;
+  margin: auto;
+}
+#nav-container-left {
+  display: inline-block;
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  top: 25px;
+}
+#nav-container-right {
+  display: inline-block;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  right: 0;
+}
+#nav-container-right ul {
+  text-align: right;
+}
+#nav-right-links li {
+  list-style: none;
+  display: inline-block;
+  line-height: 80px;
+}
+#nav-right-links a {
+  text-decoration: none;
+  margin-right: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  color: #32495b;
+  font-weight: 600;
+}
+
 #container {
   position: relative;
   height: 100%;
 }
 #jumbotron {
   width: 100%;
+}
+h1 {
+  position: absolute;
+  margin-left: 15%;
+  width: 600px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 80px;
+  color: #32495b;
+}
+#container > p {
+  position: absolute;
+  margin-left: 15%;
+  width: 600px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  margin-top: 220px;
+  color: #32495b;
+  line-height: 30px;
+}
+#call-to-action {
+  position: absolute;
+  background-color: #fe775a;
+  border: 1px solid #fe775a;
+  margin-left: 15%;
+  margin-top: 350px;
+  color: white;
+  padding: 20px 35px 20px 35px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#get-started {
+  position: absolute;
+  margin-left: 15%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  margin-top: 430px;
+  color: #32495b;
 }
 
 #section1 {
